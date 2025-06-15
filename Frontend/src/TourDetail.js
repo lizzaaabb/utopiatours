@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+// 1. IMPORT Link as an alternative, though we'll fix navigate() for now.
+import { useParams, useNavigate, Link } from 'react-router-dom'; 
+
 import Footer from './Footer.js';
 import './TourDetail.css';
-import pic1 from './tour1.jpeg'
-import pic2 from './tour2.jpeg'
-import pic3 from './tour3.jpeg'
-import pic4 from './tour4.jpeg'
-// ... (Your imports and allTourPackages array remain the same) ...
+import pic1 from './tour1.jpeg';
+import pic2 from './tour2.jpeg';
+import pic3 from './tour3.jpeg';
+import pic4 from './tour4.jpeg';
 import {
     sevenNightsEightDays,
     nineNightsTenDays,
@@ -53,27 +54,34 @@ const TourDetail = () => {
     const tourPackage = allTourPackages.find(p => p.id === parseInt(id));
 
     if (!tourPackage) {
-        // ... (not found logic remains the same)
-        return ( <div className="tour-detail-body"><div className="tour-not-found"><h2>{uiStrings.tourNotFound[currentLanguage]}</h2><button className="return" onClick={() => navigate('/tours')}>{uiStrings.backToTours[currentLanguage]}</button></div></div> );
+        return ( 
+            <div className="tour-detail-body">
+                <div className="tour-not-found">
+                    <h2>{uiStrings.tourNotFound[currentLanguage]}</h2>
+                    {/* --- FIX #1: This now navigates to the homepage path "/" --- */}
+                    <button className="return" onClick={() => navigate('/')}>
+                        {uiStrings.backToTours[currentLanguage]}
+                    </button>
+                </div>
+            </div> 
+        );
     }
     
     const tourContent = tourPackage.details[currentLanguage];
 
     const handleBook = () => { navigate(`/tours/${id}/booking`); };
-
-    // === CHANGE #1: Create a language class instead of a direction property ===
-    const languageClass = `lang-${currentLanguage}`; // This will be 'lang-en' or 'lang-ar'
+    
+    const languageClass = `lang-${currentLanguage}`;
 
     return (
-        // === CHANGE #2: Apply the class and REMOVE the style property ===
         <div className={`tour-detail-body ${languageClass}`}>
             <div className="tour-detail-container">
                                 
-                {/* Header with Back button and Language Dropdown - This will now stay LTR */}
                 <div className="tour-detail-header">
+                    {/* --- FIX #2: This also navigates to the homepage path "/" --- */}
                     <button 
                         className="return"
-                        onClick={() => navigate('/tours')}
+                        onClick={() => navigate('/')}
                     >
                         {uiStrings.backToTours[currentLanguage]}
                     </button>
@@ -93,7 +101,6 @@ const TourDetail = () => {
                     </div>
                 </div>
 
-                {/* ... (rest of the component JSX is unchanged) ... */}
                 <div className="tour-detail-card">
                     <div className="tour-detail-image">
                         <img src={tourPackage.image} alt={tourContent.title} />
