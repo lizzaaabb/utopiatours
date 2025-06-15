@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/utopiatours/static/css/main.85aaa4be.css",
+    "main.js": "/utopiatours/static/js/main.132a7d4a.js",
+    "static/media/tour3.jpeg": "/utopiatours/static/media/tour3.c232c418a7f63fb800a1.jpeg",
+    "static/media/tour2.jpeg": "/utopiatours/static/media/tour2.9394dde6e81bb9a87abb.jpeg",
+    "static/media/tour1.jpeg": "/utopiatours/static/media/tour1.114a8a56e7130442cf60.jpeg",
+    "static/media/tour4.jpeg": "/utopiatours/static/media/tour4.a2e681fb70b3b5e163df.jpeg",
+    "index.html": "/utopiatours/index.html",
+    "main.85aaa4be.css.map": "/utopiatours/static/css/main.85aaa4be.css.map",
+    "main.132a7d4a.js.map": "/utopiatours/static/js/main.132a7d4a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85aaa4be.css",
+    "static/js/main.132a7d4a.js"
+  ]
+}
