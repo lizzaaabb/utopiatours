@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/utopiatours/static/css/main.ac929c1f.css",
-    "main.js": "/utopiatours/static/js/main.c08d4668.js",
+    "main.css": "/utopiatours/static/css/main.b8d67a88.css",
+    "main.js": "/utopiatours/static/js/main.c16c8b6e.js",
     "static/media/tour3.jpeg": "/utopiatours/static/media/tour3.c232c418a7f63fb800a1.jpeg",
     "static/media/tour2.jpeg": "/utopiatours/static/media/tour2.9394dde6e81bb9a87abb.jpeg",
     "static/media/tour1.jpeg": "/utopiatours/static/media/tour1.114a8a56e7130442cf60.jpeg",
     "static/media/tour4.jpeg": "/utopiatours/static/media/tour4.a2e681fb70b3b5e163df.jpeg",
     "index.html": "/utopiatours/index.html",
-    "main.ac929c1f.css.map": "/utopiatours/static/css/main.ac929c1f.css.map",
-    "main.c08d4668.js.map": "/utopiatours/static/js/main.c08d4668.js.map"
+    "main.b8d67a88.css.map": "/utopiatours/static/css/main.b8d67a88.css.map",
+    "main.c16c8b6e.js.map": "/utopiatours/static/js/main.c16c8b6e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac929c1f.css",
-    "static/js/main.c08d4668.js"
+    "static/css/main.b8d67a88.css",
+    "static/js/main.c16c8b6e.js"
   ]
 }
