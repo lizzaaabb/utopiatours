@@ -341,17 +341,17 @@ app.get('/api/test-payze-config', (req, res) => {
 });
 
 // Payment result pages
-app.get('/booking-success', (req, res) => {
-    const { orderId } = req.query;
-    console.log('Payment success page accessed:', { orderId });
-    res.sendFile(path.join(__dirname, '../build', 'index.html'));
-});
+//app.get('/booking-success', (req, res) => {
+    //const { orderId } = req.query;
+    //console.log('Payment success page accessed:', { orderId });
+    //res.sendFile(path.join(__dirname, '../build', 'index.html'));
+//});
 
-app.get('/payment-error', (req, res) => {
-    const { orderId, error } = req.query;
-    console.log('Payment error page accessed:', { orderId, error });
-    res.sendFile(path.join(__dirname, '../build', 'index.html'));
-});
+//app.get('/payment-error', (req, res) => {
+    //const { orderId, error } = req.query;
+    //console.log('Payment error page accessed:', { orderId, error });
+    //res.sendFile(path.join(__dirname, '../build', 'index.html'));
+//});
 
 
 
